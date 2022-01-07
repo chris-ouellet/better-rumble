@@ -1,0 +1,16 @@
+{
+    "name": "Better Rumble",
+    "description": "Make rumble prettier",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "better-rumble.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": ["content.js"],
+        "matches": ["https://rumble.com/*"]
+      }]
+  }
